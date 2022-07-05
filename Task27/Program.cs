@@ -3,12 +3,17 @@
 // 82 -> 10
 // 9012 -> 12
 
-int NumDigitSum(int num)
+int NumDigitSum(int number)
 {
     int sum = 0;
-    for (int i = num; i < 10; i % 10)
+    for (int i = number; i > 0; i /= 10)
     {
-        sum += i;
+        sum += i % 10;
     }
     return sum;
 }
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(NumDigitSum(num));
