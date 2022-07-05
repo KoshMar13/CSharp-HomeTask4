@@ -2,3 +2,13 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
+
+int NumDigitSum(int num)
+{
+    int sum = 0;
+    for (int i = num; i < 10; i % 10)
+    {
+        sum += i;
+    }
+    return sum;
+}
