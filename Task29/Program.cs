@@ -19,6 +19,8 @@ void PrintArr(int[] array)
     {
         Console.Write($"{array[i]}, ");
     }
+    Console.Write("\b");
+    Console.Write("\b");
     Console.Write("]");
 }
 
